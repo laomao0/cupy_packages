@@ -10,4 +10,4 @@ CUDA:
 from  FlowProjectionModule import  FlowProjectionModule
 
 CUPY:
-from flowprojection_cupy import ModuleFlowProj
+from flowprojection_cupy import ModuleFlowProj as FlowProjectionModule
