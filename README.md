@@ -8,4 +8,5 @@ flowprojection: https://github.com/baowenbo/DAIN/tree/master/my_package/FlowProj
 
 interpolation: https://github.com/baowenbo/DAIN/tree/master/my_package/Interpolation
 
+depthflowprojection: https://github.com/baowenbo/DAIN/tree/master/my_package/DepthFlowProjection
 
