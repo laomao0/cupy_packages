@@ -10,3 +10,4 @@ interpolation: https://github.com/baowenbo/DAIN/tree/master/my_package/Interpola
 
 depthflowprojection: https://github.com/baowenbo/DAIN/tree/master/my_package/DepthFlowProjection
 
+filterinterpolation: https://github.com/baowenbo/DAIN/tree/master/my_package/FilterInterpolation
