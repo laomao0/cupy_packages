@@ -15,7 +15,7 @@ filterinterpolation: https://github.com/baowenbo/DAIN/tree/master/my_package/Fil
 
 # Usage, for example depthflowprojection:
   1. copy [DepthFlowProjection/depthflowprojection_cupy.py] into original folder [DepthFlowProjection]
-  2. change the import of [networks/DAIN] 
+  2. change the import of [networks/DAIN.py] 
      from: 
      from my_package.DepthFlowProjection import DepthFlowProjectionModule
      to:
