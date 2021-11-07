@@ -1,6 +1,6 @@
 # cupy_packages
 
-cupy packages 
+cupy packages
 
 sepconv: https://github.com/sniklaus/revisiting-sepconv
 
@@ -17,6 +17,6 @@ filterinterpolation: https://github.com/baowenbo/DAIN/tree/master/my_package/Fil
   1. copy [DepthFlowProjection/depthflowprojection_cupy.py] into original folder [DepthFlowProjection]
   2. change the import of [networks/DAIN] 
      from: 
-     ## from my_package.DepthFlowProjection import DepthFlowProjectionModule
+     from my_package.DepthFlowProjection import DepthFlowProjectionModule
      to:
-     ## from my_package.DepthFlowProjection.depthflowprojection_cupy import ModuleDepthFlowProj as DepthFlowProjectionModule
+     from my_package.DepthFlowProjection.depthflowprojection_cupy import ModuleDepthFlowProj as DepthFlowProjectionModule
