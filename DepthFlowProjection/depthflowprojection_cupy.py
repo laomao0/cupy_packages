@@ -407,7 +407,7 @@ class _FunctionFlowProj(torch.autograd.Function):
                             depth.data_ptr(), output.data_ptr(), count.data_ptr() ]
                 )
 
-                print('fill hole')
+                # print('fill hole')
         elif input.is_cuda == False:
             raise NotImplementedError()
         # end
