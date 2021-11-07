@@ -12,6 +12,8 @@ depthflowprojection: https://github.com/baowenbo/DAIN/tree/master/my_package/Dep
 
 filterinterpolation: https://github.com/baowenbo/DAIN/tree/master/my_package/FilterInterpolation
 
+# CUPY
+It can be installed using pip install cupy or alternatively using one of the provided binary packages as outlined in the CuPy repository.
 
 # Usage, for example depthflowprojection:
   1. copy [DepthFlowProjection/depthflowprojection_cupy.py] into original folder [DepthFlowProjection]
