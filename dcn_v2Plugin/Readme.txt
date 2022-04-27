@@ -28,8 +28,8 @@ Myenv: GPU2080Ti, ubuntu 18.04, pytorch1.3, cuda 11.1, TensorRT-8.4.0.6
 5. Now, you can build the src again, 
    
    a) first remove folder build at /DATA/wangshen_data/CODES/TensorRT/build
-   b) follow 1. to rebuild the src
-   c) after build over, you can see [100%] Built target xxx from terminal,
+   b) follow step 1. to rebuild the src
+   c) when built over, you can see [100%] Built target xxx from terminal,
       then you could obtain  libnvinfer_plugin.so at /DATA/wangshen_data/CODES/TensorRT/build/out
  
  
