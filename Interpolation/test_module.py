@@ -20,12 +20,14 @@ def test_module(tenOne, tenTwo):
 
     Net = InterpolationModule()
     t1 = time.time()
-    tenOut_cuda = Net(tenOne_cuda, tenTwo_cuda)
+    for x in range(1000):
+        tenOut_cuda = Net(tenOne_cuda, tenTwo_cuda)
     t2 = time.time()
     if RequireGrad:
-        tenOut_cuda.backward(tenOut_cuda.data)
+        for x in range(1):
+            tenOut_cuda.backward(tenOut_cuda.data)
     t3 = time.time()
-    print("GPU Forward and backward time is : " + str(t2-t1) +"s\t" + str(t3-t2) +"s\t")
+    print("CUDA GPU Forard and backward time is : " + str(t2-t1) +"ms\t" + str(t3-t2) +"s\t")
     # test = gradcheck(Project, (tenOne_cuda), eps=1e-2, atol=1e-2,raise_exception=True)
     # print('original test:', test)
 
@@ -34,12 +36,14 @@ def test_module(tenOne, tenTwo):
     tenTwo_cuda_cupy = Variable(tenTwo.data.type(torch.cuda.FloatTensor), requires_grad = True)
     cupy_Net = ModuleInterpolationCUPY()
     t1 = time.time()
-    cupy_tenOut_cuda = cupy_Net(tenOne_cuda_cupy,tenTwo_cuda_cupy)
+    for x in range(1000):
+        cupy_tenOut_cuda = cupy_Net(tenOne_cuda_cupy,tenTwo_cuda_cupy)
     t2 = time.time()
     if RequireGrad:
-        cupy_tenOut_cuda.backward(cupy_tenOut_cuda.data)
+        for x in range(1):
+            cupy_tenOut_cuda.backward(cupy_tenOut_cuda.data)
     t3 = time.time()
-    print("GPU Forward and backward time is : " + str(t2-t1) +"s\t" + str(t3-t2) +"s\t")
+    print("CUPY GPU Forward and backward time is : " + str(t2-t1) +"ms\t" + str(t3-t2) +"1s\t")
     # test = gradcheck(cupy_Project, (tenOne_cuda_cupy), eps=1e-2, atol=1e-2,raise_exception=True)
     # print('original test:', test)
 
