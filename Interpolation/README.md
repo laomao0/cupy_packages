@@ -19,7 +19,11 @@ run test_module.py
 obtain:  
 
    CUDA GPU Forard and backward time is : 0.03236222267150879ms    0.0023119449615478516s
+   
    CUPY GPU Forward and backward time is : 0.2577095031738281ms    0.00464224815368652341s
+   
    Check the output between Ori and My...  output pass 
+   
    Check the grad_inp between Ori and My...        grad_In pass 
+   
    Check the grad_flow between Ori and My...       grad_In pass 
