@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "/home/shenwang/.conda/envs/pytorch11/bin/python",
+    // "python.pythonPath": "/home/shenwang/.conda/envs/tf0.12/bin/python",
+    "workbench.editor.enablePreview": false,
+    // "editor.detectIndentation": true,
+    // "editor.insertSpaces": true,
+    // "editor.tabSize": 4,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+}
